@@ -2,16 +2,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: efs-app
+  name: efs-app-1
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: efs-app
+      app: efs-app-1
   template:
     metadata:
       labels:
-        app: efs-app
+        app: efs-app-1
     spec:
       #serviceAccountName: app-sa  # Optional, if you created a ServiceAccount
       containers:
