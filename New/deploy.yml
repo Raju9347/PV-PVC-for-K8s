@@ -2,17 +2,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: efs-app-3
+  name: efs-app-4
 stratagyType: RollingUpdate
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: efs-app-3
+      app: efs-app-4
   template:
     metadata:
       labels:
-        app: efs-app-3
+        app: efs-app-4
     spec:
       #serviceAccountName: app-sa  # Optional, if you created a ServiceAccount
       containers:
