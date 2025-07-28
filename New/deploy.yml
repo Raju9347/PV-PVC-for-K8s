@@ -5,7 +5,7 @@ metadata:
   name: efs-app-1
 stratagyType: RollingUpdate
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: efs-app-1
