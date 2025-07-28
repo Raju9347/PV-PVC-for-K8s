@@ -13,13 +13,13 @@ spec:
       labels:
         app: efs-app
     spec:
-      serviceAccountName: app-sa  # Optional, if you created a ServiceAccount
+      #serviceAccountName: app-sa  # Optional, if you created a ServiceAccount
       containers:
         - name: app-container
           image: nginx  # Replace with your actual app image
-          volumeMounts:
-            - name: efs-storage
-              mountPath: /mnt/data  # Path inside the container
+         # volumeMounts:
+            #- name: efs-storage
+           #   mountPath: /mnt/data  # Path inside the container
      #Volumes:
         #- name: efs-storage
          # persistentVolumeClaim:
