@@ -19,7 +19,7 @@ spec:
           volumeMounts:
             - name: efs-storage
               mountPath: /mnt/data  # Path inside the container
-     #Volumes:
-        #- name: efs-storage
-         # persistentVolumeClaim:
-            #claimName: efs-pvc
+     Volumes:
+        - name: efs-storage
+          persistentVolumeClaim:
+            claimName: efs-pvc
